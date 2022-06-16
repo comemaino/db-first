@@ -1,0 +1,16 @@
+USED CARS
+
+id - PRIMARY KEY - INT - UNSIGNED - NOTNULL - AUTOINCREMENT - UNIQUE
+vin_number - VARCHAR(17) - NOTNULL - UNIQUE
+registration_date - DATE - NOTNULL
+production_year - YEAR - NOTNULL
+brand - VARCHAR(24) - NOTNULL
+model - VARCHAR(24) - NOTNULL
+mileage - INT - UNSIGNED - NOTNULL
+country_of_registration - VARCHAR(2) - NOTNULL
+colour - VARCHAR(12)
+power - VARCHAR(12) - NOTNULL
+efficiency_km/l - FLOAT(3,1) - NOTNULL
+wheel_drive- VARCHAR(12)
+previous_owners_n - TINYINT
+checkups - TINYINT - NOTNULL
