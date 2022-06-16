@@ -1,16 +1,26 @@
 USED CARS
 
-id - PRIMARY KEY - INT - UNSIGNED - NOTNULL - AUTOINCREMENT - UNIQUE
+id - PRIMARY KEY - INT - UNSIGNED - NOTNULL - AUTO_INCREMENT - UNIQUE
+
 vin_number - VARCHAR(17) - NOTNULL - UNIQUE
-registration_date - DATE - NOTNULL
 production_year - YEAR - NOTNULL
+registration_date - DATE - NOTNULL
+country_of_registration - VARCHAR(2) - NOTNULL
+license_plate - VARCHAR(10) - UNIQUE - NOTNULL
+
+price_€ - INT - UNSIGNED - NOTNULL
 brand - VARCHAR(24) - NOTNULL
 model - VARCHAR(24) - NOTNULL
-mileage - INT - UNSIGNED - NOTNULL
-country_of_registration - VARCHAR(2) - NOTNULL
-colour - VARCHAR(12)
-power - VARCHAR(12) - NOTNULL
+colour - VARCHAR(12) - NOTNULL
+mileage_km- INT - UNSIGNED - NOTNULL
+
+power_source - VARCHAR(12) - NOTNULL
+power_hp - SMALLINT - NOTNULL
+engine_size_l - FLOAT(2,1) - NOTNULL
 efficiency_km/l - FLOAT(3,1) - NOTNULL
-wheel_drive- VARCHAR(12)
+wheel_drive - VARCHAR(12) - NOTNULL
+
 previous_owners_n - TINYINT
 checkups - TINYINT - NOTNULL
+all_original_parts - TINYINT
+damages - VARCHAR(255)
